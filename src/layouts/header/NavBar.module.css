@@ -1,0 +1,34 @@
+.wrapper ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+.counter {
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-white);
+    font-size: var(--font-200);
+    font-weight: bold;
+    background-color: var(--main-color);
+}
+
+.wrapper ul li a {
+    opacity: 0.5;
+}
+
+.wrapper ul li a:hover {
+    opacity: 1;
+}

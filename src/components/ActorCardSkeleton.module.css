@@ -1,0 +1,9 @@
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.card > div:first-of-type {
+    flex-grow: 1;
+}

@@ -1,0 +1,15 @@
+.btn {
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid var(--orange-light);
+    font-size: var(--font-400);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 576px) {
+    .btn:hover {
+        background-color: var(--orange-light);
+    }    
+}

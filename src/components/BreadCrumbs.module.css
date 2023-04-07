@@ -1,0 +1,35 @@
+
+.breadcrumbs {
+    margin: 10px 0;
+    background-image: linear-gradient(to right, var(--dark-blue) 50%, transparent);
+    padding: 5px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.breadcrumbs li {
+    display: inline;
+    font-size: var(--font-400);
+
+}
+
+.breadcrumbs li a {
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+    color: var(--font-main);
+    cursor: pointer;
+}
+
+.breadcrumbs li:last-of-type {
+    pointer-events: none;
+    color: var(--font-gray);
+}
+
+.breadcrumbs li+li:before {
+    padding: 8px;
+    content: "\003e";
+}
+
+.breadcrumbs li a:hover {
+    border-color: var(--main-color);
+}

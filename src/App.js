@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/home/Home';
+import ShowPage from './pages/showPage/ShowPage';
+import PersonPage from './pages/personPage/PersonPage';
+import { actorDataLoader } from './loaders/actorDataLoader';
+import { Navigate, Route,RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import RootLayout from './layouts/routerLayouts/RootLayout';
+import ShowLayout from './layouts/routerLayouts/ShowLayout';
+import PersonLayout from './layouts/routerLayouts/PersonLayout';
+import { showDataLoader } from './loaders/showDataLoader';
+import Favorites from './pages/favorites/Favorites';
+import Watched from './pages/watched/Watched';
 
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout />}>
+      <Route index element={<Home />} />
+
+      <Route path='shows' element={<ShowLayout />}>
+        <Route path=':showId/:showTitle' element={<ShowPage />} loader={showDataLoader}/>
+      </Route>
+
+      <Route path='actors' element={<PersonLayout />}>
+        <Route path=':actordId/:actorName' element={<PersonPage />} loader={actorDataLoader}/>
+      </Route>
+
+      <Route path='favorites' element={<Favorites />}/>
+      <Route path='watched' element={<Watched />}/>
+
+
+      <Route path='*' element={<Navigate to='/' />} />
+    </Route>
+  )
+)
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <RouterProvider router={router} />
   );
 }
 

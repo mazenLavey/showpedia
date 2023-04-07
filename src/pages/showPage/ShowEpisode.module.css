@@ -1,0 +1,15 @@
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.episodes__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}

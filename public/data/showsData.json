@@ -1,0 +1,1272 @@
+[
+    {
+        "show": {
+            "id": 251,
+            "url": "https://www.tvmaze.com/shows/251/downton-abbey",
+            "name": "Downton Abbey",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Family",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 71,
+            "premiered": "2010-09-26",
+            "ended": "2015-12-25",
+            "officialSite": "http://www.itv.com/downtonabbey",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.8
+            },
+            "weight": 96,
+            "network": {
+                "id": 35,
+                "name": "ITV1",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.itv.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 26615,
+                "thetvdb": 193131,
+                "imdb": "tt1606375"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/1/4601.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/1/4601.jpg"
+            },
+            "summary": "<p>The Downton Abbey estate stands a splendid example of confidence and mettle, its family enduring for generations and its staff a well-oiled machine of propriety. But change is afoot at Downton--change far surpassing the new electric lights and telephone. A crisis of inheritance threatens to displace the resident Crawley family, in spite of the best efforts of the noble and compassionate Earl, Robert Crawley; his American heiress wife, Cora his comically implacable, opinionated mother, Violet and his beautiful, eldest daughter, Mary, intent on charting her own course. Reluctantly, the family is forced to welcome its heir apparent, the self-made and proudly modern Matthew Crawley himself none too happy about the new arrangements. As Matthew's bristly relationship with Mary begins to crackle with electricity, hope for the future of Downton's dynasty takes shape. But when petty jealousies and ambitions grow among the family and the staff, scheming and secrets--both delicious and dangerous--threaten to derail the scramble to preserve Downton Abbey. <i>Downton Abbey</i> offers a spot-on portrait of a vanishing way of life.</p>",
+            "updated": 1668218432,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/251"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/623237"
+                }
+            }
+        }
+    },
+    {
+        "show": {
+            "id": 269,
+            "url": "https://www.tvmaze.com/shows/269/peaky-blinders",
+            "name": "Peaky Blinders",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime",
+                "History"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 61,
+            "premiered": "2013-09-12",
+            "ended": "2022-04-03",
+            "officialSite": "http://www.bbc.co.uk/programmes/b045fz8r",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 96,
+            "network": {
+                "id": 12,
+                "name": "BBC One",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/bbcone"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 37240,
+                "thetvdb": 270915,
+                "imdb": "tt2442560"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/48/122213.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/48/122213.jpg"
+            },
+            "summary": "<p>An epic gangster drama set in the lawless streets of 1920s Birmingham.</p>",
+            "updated": 1657658603,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/269"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2270891"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 305,
+            "url": "https://www.tvmaze.com/shows/305/black-mirror",
+            "name": "Black Mirror",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Science-Fiction",
+                "Thriller"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 63,
+            "premiered": "2011-12-04",
+            "ended": null,
+            "officialSite": "https://www.netflix.com/title/70264888",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 8.6
+            },
+            "weight": 99,
+            "network": null,
+            "webChannel": {
+                "id": 1,
+                "name": "Netflix",
+                "country": null,
+                "officialSite": "https://www.netflix.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 30348,
+                "thetvdb": 253463,
+                "imdb": "tt2085059"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/240/601964.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/240/601964.jpg"
+            },
+            "summary": "<p>Over the last ten years, technology has transformed almost every aspect of our lives before we've had time to stop and question it. In every home; on every desk; in every palm - a plasma screen; a monitor; a smartphone--a black mirror of our 21st Century existence. <b>Black Mirror</b> is a contemporary British re-working of <i>The Twilight Zone</i> with stories that tap into the collective unease about our modern world.</p>",
+            "updated": 1678869150,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/305"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1659382"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 315,
+            "url": "https://www.tvmaze.com/shows/315/archer",
+            "name": "Archer",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Action",
+                "Adult"
+            ],
+            "status": "To Be Determined",
+            "runtime": 30,
+            "averageRuntime": 29,
+            "premiered": "2009-09-17",
+            "ended": null,
+            "officialSite": "http://www.fxnetworks.com/archer",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Wednesday"
+                ]
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 98,
+            "network": {
+                "id": 47,
+                "name": "FXX",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 23354,
+                "thetvdb": 110381,
+                "imdb": "tt1486217"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/426/1065458.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/426/1065458.jpg"
+            },
+            "summary": "<p><b>Archer</b> is an animated, half-hour comedy set at the International Secret Intelligence Service, a spy agency where espionage and global crises are merely opportunities for its highly trained employees to confuse, undermine, betray and royally screw each other.</p>",
+            "updated": 1665796387,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/315"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2361627"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 335,
+            "url": "https://www.tvmaze.com/shows/335/sherlock",
+            "name": "Sherlock",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Mystery"
+            ],
+            "status": "Ended",
+            "runtime": 90,
+            "averageRuntime": 90,
+            "premiered": "2010-07-25",
+            "ended": "2017-01-15",
+            "officialSite": "http://www.bbc.co.uk/programmes/b018ttws",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.9
+            },
+            "weight": 98,
+            "network": {
+                "id": 12,
+                "name": "BBC One",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/bbcone"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 23433,
+                "thetvdb": 176941,
+                "imdb": "tt1475582"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/171/428042.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/171/428042.jpg"
+            },
+            "summary": "<p>Sherlock Holmes and Dr. John Watson's adventures in 21st Century London. A thrilling, funny, fast-paced contemporary reimagining of the Arthur Conan Doyle classic.</p>",
+            "updated": 1670042592,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/335"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1004191"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 353,
+            "url": "https://www.tvmaze.com/shows/353/line-of-duty",
+            "name": "Line of Duty",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Thriller"
+            ],
+            "status": "To Be Determined",
+            "runtime": 60,
+            "averageRuntime": 62,
+            "premiered": "2012-06-26",
+            "ended": null,
+            "officialSite": "http://www.bbc.co.uk/programmes/p00yzlr0",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.7
+            },
+            "weight": 99,
+            "network": {
+                "id": 12,
+                "name": "BBC One",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/bbcone"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 31935,
+                "thetvdb": 260092,
+                "imdb": "tt2303687"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/199/499692.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/199/499692.jpg"
+            },
+            "summary": "<p>A drama about the investigations of AC-12, a controversial Police Anti-Corruption Unit.</p>",
+            "updated": 1659538201,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/353"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2073852"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 358,
+            "url": "https://www.tvmaze.com/shows/358/spartacus-gods-of-the-arena",
+            "name": "Spartacus: Gods of the Arena",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "2011-01-21",
+            "ended": "2011-02-25",
+            "officialSite": null,
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.6
+            },
+            "weight": 96,
+            "network": {
+                "id": 17,
+                "name": "STARZ",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.starz.com/us/en/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 26886,
+                "thetvdb": null,
+                "imdb": "tt1758429"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/2/5449.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/2/5449.jpg"
+            },
+            "summary": "<p>The mini-series features the bloody history of the House of Batiatus and the city of Capua before the arrival of Spartacus. Quintus Lentulus Batiatus becomes a lanista (manager) when he takes over his father's ludus of gladiators. He has ambitions of stepping out of his father's shadow by seeking recognition for his own name and achieving further greatness for his house. By his side stands his beautiful wife Lucretia who will help her husband achieve his ambitions, whatever the cost. Batiatus puts all his fortunes on the man who will gain him fame and glory. That would be his best gladiator, the Celt, Gannicus, a skilled warrior who wields dual swords with deadly purpose. Those who oppose Batiatus and his future champion(s) of Capua do so at their own peril.</p><p>Purchased as an undisciplined and disheveled recruit in the first episode, Crixus the Gaul endures mockery and threats of death to become the champion after Gannicus. As Batiatus fends off repeated attempts by his professional rival Tullius to obtain Gannicus, his relationships with his father Titus and friend Solonius begin to suffer the strain of his relentless ambition. Former champion, Oenomaus, reluctantly becomes Doctore, while Syrian recruits Ashur and Dagan try to prove themselves worthy of being gladiators. Veteran gladiators Barca and Gannicus note the rising star of Crixus, as the machinations of Batiatus and Lucretia end in tragedy for several members of the household. Against all of this, the city's splendid new arena nears completion and with it the opening games that will make slaves into gods. When the arena opens, Batiatus' gladiators prevail in the contest. Gannicus again proves himself to be the champion of Capua and a god of the arena. By virtue of his win against Solonius' gladiators, he gains his freedom and Crixus becomes the new champion.</p>",
+            "updated": 1676070154,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/358"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/33090"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 394,
+            "url": "https://www.tvmaze.com/shows/394/call-the-midwife",
+            "name": "Call the Midwife",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Medical"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "2012-01-15",
+            "ended": null,
+            "officialSite": "http://www.bbc.co.uk/programmes/p0118t80",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 98,
+            "network": {
+                "id": 12,
+                "name": "BBC One",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/bbcone"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 30579,
+                "thetvdb": 255192,
+                "imdb": "tt1983079"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/440/1101721.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/440/1101721.jpg"
+            },
+            "summary": "<p>Drama following the lives of a group of midwives working in the poverty-stricken East End of London during the 1950s, based on the best-selling memoirs of Jennifer Worth.</p>",
+            "updated": 1679347272,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/394"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2489447"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 395,
+            "url": "https://www.tvmaze.com/shows/395/longmire",
+            "name": "Longmire",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Thriller",
+                "Western"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 60,
+            "premiered": "2012-06-03",
+            "ended": "2017-11-17",
+            "officialSite": "https://www.netflix.com/title/70269479",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 93,
+            "network": null,
+            "webChannel": {
+                "id": 1,
+                "name": "Netflix",
+                "country": null,
+                "officialSite": "https://www.netflix.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 29357,
+                "thetvdb": 253491,
+                "imdb": "tt1836037"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/74/186713.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/74/186713.jpg"
+            },
+            "summary": "<p><b>Longmire</b>, a contemporary crime thriller set in Big Sky country, is based on the Walt Longmire Mystery novels by best-selling author Craig Johnson. It focuses on a Wyoming sheriff who's rebuilding his life and career following the death of his wife.</p>",
+            "updated": 1677270807,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/395"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1357256"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 396,
+            "url": "https://www.tvmaze.com/shows/396/gravity-falls",
+            "name": "Gravity Falls",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Adventure",
+                "Mystery",
+                "Supernatural"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "averageRuntime": 30,
+            "premiered": "2012-06-15",
+            "ended": "2016-02-15",
+            "officialSite": null,
+            "schedule": {
+                "time": "19:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 8.8
+            },
+            "weight": 91,
+            "network": {
+                "id": 25,
+                "name": "Disney XD",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 31839,
+                "thetvdb": 259972,
+                "imdb": "tt1865718"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/2/6140.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/2/6140.jpg"
+            },
+            "summary": "<p>Twin brother and sister Dipper and Mabel Pines are in for an unexpected adventure when they spend the summer with their great Uncle in the mysterious town of Gravity Falls, Oregon.</p>",
+            "updated": 1654193277,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/396"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/483406"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 427,
+            "url": "https://www.tvmaze.com/shows/427/buffy-the-vampire-slayer",
+            "name": "Buffy the Vampire Slayer",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Supernatural"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "1997-03-10",
+            "ended": "2003-05-20",
+            "officialSite": null,
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 98,
+            "network": {
+                "id": 70,
+                "name": "UPN",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 2930,
+                "thetvdb": 70327,
+                "imdb": "tt0118276"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/2/7490.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/2/7490.jpg"
+            },
+            "summary": "<p><i>\"Into every generation, there is a chosen one. She alone will stand against the vampires, the demons, and the forces of darkness. She is the slayer.\"</i></p><p>Buffy Summers is the latest in a line of young women known as \"Vampire Slayers\" who have to battle vampires, demons and other forces of evil, all while growing up and dealing with love and teenage angst in this iconic cult series. She and her \"Scooby Gang\" fight the good fight in a small town called Sunnydale.</p>",
+            "updated": 1674793735,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/427"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/40175"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 429,
+            "url": "https://www.tvmaze.com/shows/429/farscape",
+            "name": "Farscape",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "1999-03-19",
+            "ended": "2003-03-21",
+            "officialSite": null,
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.6
+            },
+            "weight": 94,
+            "network": {
+                "id": 16,
+                "name": "Syfy",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 3519,
+                "thetvdb": 70522,
+                "imdb": "tt0187636"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/3/7531.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/3/7531.jpg"
+            },
+            "summary": "<p>Astronaut John Crichton assumes he'll be home in time for dinner. But a freak accident during an experimental space mission catapults him across a thousand galaxies to an alien battlefield. Suddenly, he's trapped among alien creatures wielding deadly technology - a battle that 20th century sci-fi pop culture never prepared him for. Hunted by a merciless military race, Crichton begins his quest for home from a galaxy far, far away...</p>",
+            "updated": 1677024505,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/429"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/40373"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 430,
+            "url": "https://www.tvmaze.com/shows/430/the-x-files",
+            "name": "The X-Files",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "1993-09-10",
+            "ended": "2018-03-21",
+            "officialSite": "http://www.fox.com/the-x-files",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Wednesday"
+                ]
+            },
+            "rating": {
+                "average": 8.6
+            },
+            "weight": 98,
+            "network": {
+                "id": 4,
+                "name": "FOX",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.fox.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 6312,
+                "thetvdb": 77398,
+                "imdb": "tt0106179"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/422/1056103.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/422/1056103.jpg"
+            },
+            "summary": "<p>Two FBI agents, Fox Mulder (a believer) and Dana Scully (a skeptic), investigate unexplained cases where the paranormal might be involved while hidden forces work to impede their efforts.</p>",
+            "updated": 1671133129,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/430"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1410887"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 431,
+            "url": "https://www.tvmaze.com/shows/431/friends",
+            "name": "Friends",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "averageRuntime": 30,
+            "premiered": "1994-09-22",
+            "ended": "2004-05-06",
+            "officialSite": null,
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 99,
+            "network": {
+                "id": 1,
+                "name": "NBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.nbc.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 3616,
+                "thetvdb": 79168,
+                "imdb": "tt0108778"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/41/104550.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/41/104550.jpg"
+            },
+            "summary": "<p>Six young (20-something) people from New York City (Manhattan), on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life.</p><p>This average group of buddies goes through massive mayhem, family trouble, past and future romances, fights, laughs, tears and surprises as they learn what it really means to be a friend.</p>",
+            "updated": 1674149192,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/431"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/40881"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 464,
+            "url": "https://www.tvmaze.com/shows/464/the-pacific",
+            "name": "The Pacific",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "War"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "2010-03-14",
+            "ended": "2010-05-16",
+            "officialSite": "http://www.hbo.com/the-pacific/index.html",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 96,
+            "network": {
+                "id": 8,
+                "name": "HBO",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.hbo.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 19316,
+                "thetvdb": 85539,
+                "imdb": "tt0374463"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/444/1111650.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/444/1111650.jpg"
+            },
+            "summary": "<p><b>The Pacific</b> is an epic ten-part miniseries. The Pacific tracks the intertwined real-life stories of three U.S. Marines – Robert Leckie, John Basilone, and Eugene Sledge – across the vast canvas of the Pacific Theater during World War II. The miniseries follows these men and their fellow Marines from their first battle with the Japanese on Guadalcanal, through the rain forests of Cape Gloucester and the strongholds of Peleliu, across the bloody sands of Iwo Jima and through the horror of Okinawa, and finally to their triumphant but uneasy return home after V-J Day.</p>",
+            "updated": 1675182335,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/464"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/42788"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 465,
+            "url": "https://www.tvmaze.com/shows/465/band-of-brothers",
+            "name": "Band of Brothers",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "War"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 59,
+            "premiered": "2001-09-09",
+            "ended": "2001-11-04",
+            "officialSite": "http://www.hbo.com/band-of-brothers",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.9
+            },
+            "weight": 96,
+            "network": {
+                "id": 8,
+                "name": "HBO",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.hbo.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 2708,
+                "thetvdb": 74205,
+                "imdb": "tt0185906"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/80/201679.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/80/201679.jpg"
+            },
+            "summary": "<p>Drawn from interviews with survivors of Easy Company, as well as their journals and letters, <b>Band of Brothers</b> chronicles the experiences of these men from paratrooper training in Georgia through the end of the war. As an elite rifle company parachuting into Normandy early on D-Day morning, participants in the Battle of the Bulge, and witness to the horrors of war, the men of Easy knew extraordinary bravery and extraordinary fear - and became the stuff of legend. Based on Stephen E. Ambrose's acclaimed book of the same name.</p>",
+            "updated": 1662443989,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/465"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/42799"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 473,
+            "url": "https://www.tvmaze.com/shows/473/veronica-mars",
+            "name": "Veronica Mars",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Mystery"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 60,
+            "premiered": "2004-09-22",
+            "ended": "2019-07-19",
+            "officialSite": "https://www.hulu.com/series/veronica-mars-4626972c-9da7-40fe-aed7-977f55f48fc5",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 97,
+            "network": null,
+            "webChannel": {
+                "id": 2,
+                "name": "Hulu",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.hulu.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 6507,
+                "thetvdb": 73730,
+                "imdb": "tt0412253"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/204/512460.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/204/512460.jpg"
+            },
+            "summary": "<p>In the wealthy, seaside community of Neptune, the rich and powerful make the rules. They own the town and are desperately trying to keep their dirty little secrets just that... secret. Unfortunately for them, there's Veronica Mars, a smart, fearless private investigator dedicated to solving the town's toughest mysteries. During the day, Veronica studies hard, but by night, she helps her father Keith with his private investigator business, sneaking through back alleys and scoping out no-tell motels with a telescopic-lens camera in an attempt to uncover the California beach town's darkest secrets.</p>",
+            "updated": 1643613948,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/473"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1638985"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 475,
+            "url": "https://www.tvmaze.com/shows/475/babylon-5",
+            "name": "Babylon 5",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "1993-02-22",
+            "ended": "2007-07-31",
+            "officialSite": null,
+            "schedule": {
+                "time": "19:00",
+                "days": [
+                    "Wednesday"
+                ]
+            },
+            "rating": {
+                "average": 8.6
+            },
+            "weight": 94,
+            "network": {
+                "id": 14,
+                "name": "TNT",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.tntdrama.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 2693,
+                "thetvdb": 70726,
+                "imdb": "tt0105946"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/80/200201.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/80/200201.jpg"
+            },
+            "summary": "<p>\"It was the dawn of the Third Age of Mankind ten years after the Earth-Minbari War The Babylon Project was a dream given form. Its goal: to prevent another war by creating a place where Humans and aliens could work out their differences peacefully. It's a port of call – home away from home for diplomats, hustlers, entrepreneurs, and wanderers. Humans and aliens wrapped in two million, five-hundred thousand tons of spinning metal, all alone in the night. It can be a dangerous place, but it's our last best hope for peace. This is the story of the last of the Babylon stations. The year is 2258. The name of the place is <b>Babylon 5</b>\".</p><p>A five season space opera written by J. Michael Straczynsky.</p>",
+            "updated": 1676990162,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/475"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/43541"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 478,
+            "url": "https://www.tvmaze.com/shows/478/terminator-the-sarah-connor-chronicles",
+            "name": "Terminator: The Sarah Connor Chronicles",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "2008-01-13",
+            "ended": "2009-04-10",
+            "officialSite": null,
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 96,
+            "network": {
+                "id": 4,
+                "name": "FOX",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.fox.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 13445,
+                "thetvdb": 80344,
+                "imdb": "tt0851851"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/3/9347.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/3/9347.jpg"
+            },
+            "summary": "<p>The mother of all destiny. Her son, the future leader of mankind. Their protector, a Terminator from the future. Together they must take back the future as Sarah Connor prepares her son to fight the war against machines determined to annihilate the human race. The clock is ticking. Can they stop Judgment Day?</p>",
+            "updated": 1674421144,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/478"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/43619"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 488,
+            "url": "https://www.tvmaze.com/shows/488/naruto-shippuuden",
+            "name": "Naruto: Shippuuden",
+            "type": "Animation",
+            "language": "Japanese",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Anime",
+                "Fantasy"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "averageRuntime": 30,
+            "premiered": "2007-02-15",
+            "ended": "2017-03-23",
+            "officialSite": "http://www.tv-tokyo.co.jp/anime/naruto/index2.html",
+            "schedule": {
+                "time": "19:30",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 8.7
+            },
+            "weight": 92,
+            "network": {
+                "id": 76,
+                "name": "TV Tokyo",
+                "country": {
+                    "name": "Japan",
+                    "code": "JP",
+                    "timezone": "Asia/Tokyo"
+                },
+                "officialSite": null
+            },
+            "webChannel": {
+                "id": 20,
+                "name": "Crunchyroll",
+                "country": null,
+                "officialSite": "https://www.crunchyroll.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 14748,
+                "thetvdb": 79824,
+                "imdb": "tt0988824"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/3/9413.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/3/9413.jpg"
+            },
+            "summary": "<p><b>Naruto: Shippuden</b> is the continuation of the original animated TV series Naruto.The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru. After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work, though it will not be easy, as he has amassed a few (more dangerous) enemies, in the likes of the shinobi organization; Akatsuki.</p>",
+            "updated": 1670687950,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/488"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1099850"
+                }
+            }
+        }
+    },
+    {
+        "show":{
+            "id": 491,
+            "url": "https://www.tvmaze.com/shows/491/star-trek-the-next-generation",
+            "name": "Star Trek: The Next Generation",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "averageRuntime": 60,
+            "premiered": "1987-09-28",
+            "ended": "1994-05-23",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 8.7
+            },
+            "weight": 99,
+            "network": {
+                "id": 72,
+                "name": "Syndication",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 5337,
+                "thetvdb": 71470,
+                "imdb": "tt0092455"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/292/730798.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/292/730798.jpg"
+            },
+            "summary": "<p><b>Star Trek: The Next Generation</b> (TNG) focuses on the 24th century adventures of Captain Jean-Luc Picard aboard the U.S.S. Enterprise (NCC-1701-D). This incarnation of the famous starship is much larger than the one captained by James T. Kirk a century earlier, and, accordingly, it carries a larger crew complement: 1,012 men, women…and, surprisingly, children. This era's Starfleet Command believes that men and women are more likely to sign up for long-term exploratory missions if they think of their ship as home. Thus, Picard's crew enjoys many of the comforts they'd have otherwise left behind, including a wide variety of recreational opportunities, \"replicated\" food dishes to suit every palate, and quarters large enough to share with spouses and offspring. There are schools for the children and a bar (stocked with synthetic alcohol, or synthehol) where the adults can unwind. However, the ongoing mission—no longer limited to a mere five years—remains virtually the same as it was during Kirk's time: to seek out new life and new civilizations, and to boldly go where no one has gone before.</p>",
+            "updated": 1680102990,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/491"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/44633"
+                }
+            }
+        }
+    }
+]

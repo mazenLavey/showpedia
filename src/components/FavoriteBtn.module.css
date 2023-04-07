@@ -1,0 +1,8 @@
+.favoriteBtn {
+    font-size: var(--font-600);
+    cursor: pointer;
+}
+
+.favoriteBtn:active {
+    transform: scale(0.98);
+}

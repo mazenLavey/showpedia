@@ -1,0 +1,26 @@
+
+.section {
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.logo {
+    font-size: var(--font-700);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    letter-spacing: 10px;
+}

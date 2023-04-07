@@ -1,0 +1,44 @@
+.body {
+    background-color: var(--gray-dark);
+    padding: 10px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.body:hover {
+    opacity: 1;
+}
+
+.body:hover svg {
+    color: var(--orange-light);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-size: var(--font-400);
+}
+
+.airdate {
+    margin-left: auto;
+    font-size: var(--font-300);
+    color: var(--font-gray);
+    min-width: 55px;
+}
+
+.summary,
+.more {
+    margin-top: 10px;
+    color: var(--font-gray);
+    font-size: var(--font-300);
+    padding-left: 30px;
+}
+
+.summary {
+    font-size: var(--font-400);
+}
