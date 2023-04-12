@@ -1,4 +1,4 @@
-import EpisodeCardCSS from './EpisodeCard.module.css';
+import EpisodeCardCSS from './css/EpisodeCard.module.css';
 import matchText from '../../functions/matchText';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay} from '@fortawesome/free-regular-svg-icons';

@@ -1,0 +1,57 @@
+
+.wrapper {
+    overflow: hidden;
+    padding: 25px 5px;
+    position: relative;
+}
+
+.wrapper::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background-image: linear-gradient(to left, var(--dark-blue), transparent);
+    z-index: 100;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (min-width: 576px) {
+    .header {
+        gap: 10px;
+    }
+}
+
+.country,
+.date {
+    padding: 5px 10px;
+    font-size: var(--font-300);
+    border-radius: 8px;
+    height: 30px;
+}
+
+.date {
+    color: var(--font-white);
+    background-color: var(--main-color);
+}
+
+.country {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--font-black);
+    background-color: #fff;
+}
+
+.noData {
+    font-size: var(--font-600);
+    color: var(--font-white);
+}
+
+

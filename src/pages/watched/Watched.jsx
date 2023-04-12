@@ -1,11 +1,11 @@
 import WatchedCSS from './Watched.module.css';
 import { useContext } from "react";
-import { WatchedData } from "../../context/WatchedData";
+import { WatchedContext } from "../../context/WatchedContext";
 import { nanoid } from 'nanoid';
 import ShowCard from '../../components/ShowCard';
 
 const Watched = ()=>{
-    const {watchedList} = useContext(WatchedData);
+    const {watchedList} = useContext(WatchedContext);
     const elements = watchedList.map(el => <ShowCard key={nanoid()} data={el}/>)
     return (
         <section className="container">

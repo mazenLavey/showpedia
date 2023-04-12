@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faEye} from '@fortawesome/free-regular-svg-icons';
-import {WatchedData} from '../../context/WatchedData';
-import { FavoriteData } from '../../context/FavoriteData';
+import { WatchedContext } from '../../context/WatchedContext';
+import { FavoriteContext } from '../../context/FavoriteContext';
 
 const NavBar = ()=>{
-    const {watchedList} = useContext(WatchedData);
-    const {favoritesList} = useContext(FavoriteData);
+    const {watchedList} = useContext(WatchedContext);
+    const {favoritesList} = useContext(FavoriteContext);
 
     return (
         <>
@@ -17,11 +17,11 @@ const NavBar = ()=>{
             <ul>
                 <li>
                     {favoritesList.length > 0 && <span className={NavBarCSS.counter}>{favoritesList.length}</span>}
-                    <FontAwesomeIcon style={{color: "var(--red)"}} icon={faHeart} /> <NavLink to="favorites">Favorites</NavLink>
+                    <NavLink to="favorites"><FontAwesomeIcon style={{color: "var(--red)"}} icon={faHeart} /> Favorites</NavLink>
                 </li>
                 <li>
                     {watchedList.length > 0 && <span className={NavBarCSS.counter}>{watchedList.length}</span>}
-                    <FontAwesomeIcon icon={faEye} /> <NavLink to="watched">Watched</NavLink>
+                    <NavLink to="watched"><FontAwesomeIcon icon={faEye} /> Watched</NavLink>
                 </li>
             </ul>
         </nav>

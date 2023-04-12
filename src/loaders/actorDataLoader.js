@@ -1,7 +1,6 @@
 
-
-
 export const actorDataLoader = async ({ params }) => {
+
     try {
         const [dataInfo, dataShows] = await Promise.all([
             fetch(`https://api.tvmaze.com/people/${params.actordId}`).then(res => {
@@ -31,7 +30,7 @@ export const actorDataLoader = async ({ params }) => {
         ])
         return [dataInfo, dataShows]
     } catch(e) {
-        console.log("errrrrrrrrrrrrrrrrrrr", e)
+        console.log("error from actors loader", e)
         throw new Error('Error fetching data');
     }
 }

@@ -1,11 +1,11 @@
 import FavoritesCSS from './Favorites.module.css';
 import { useContext } from "react";
-import { FavoriteData } from "../../context/FavoriteData";
+import { FavoriteContext } from "../../context/FavoriteContext";
 import { nanoid } from 'nanoid';
 import ShowCard from '../../components/ShowCard';
 
 const Favorites = ()=>{
-    const {favoritesList} = useContext(FavoriteData);
+    const {favoritesList} = useContext(FavoriteContext);
     const elements = favoritesList.map(el => <ShowCard key={nanoid()} data={el}/>)
 
     return (

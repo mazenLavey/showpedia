@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { FavoriteData } from "../context/FavoriteData";
+import { FavoriteContext } from "../context/FavoriteContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as faHeartCliked } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as faHeartNotCliked} from '@fortawesome/free-regular-svg-icons';
@@ -7,7 +7,7 @@ import FavoriteBtnCSS from './FavoriteBtn.module.css';
 
 const FavoriteBtn = ({data})=>{
     const [isFavorite, setIsFavorite] = useState(false);
-    const {favoritesList, addToFavorite, removeFromFavorite } = useContext(FavoriteData);
+    const {favoritesList, addToFavorite, removeFromFavorite } = useContext(FavoriteContext);
 
     useEffect(()=>{
         if(favoritesList.length > 0) {

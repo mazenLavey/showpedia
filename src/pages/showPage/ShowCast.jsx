@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import Actor from '../../components/ActorCard';
-import ShowCastCSS from './ShowCast.module.css';
+import ShowCastCSS from './css/ShowCast.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileExcel} from '@fortawesome/free-solid-svg-icons';
 

@@ -1,10 +1,10 @@
 import { useState, useContext } from 'react';
 import ByActorNameCSS from './ByActorName.module.css';
-import {ActorsData} from '../context/ActorsData';
+import { SearchContext } from '../context/SearchContext';
 
 const ByActorName = ()=>{
     const [formData, setFormData] = useState("");
-    const {findActor} = useContext(ActorsData);
+    const {findActor} = useContext(SearchContext);
 
     function handelInput(e) {
         setFormData(e.target.value);

@@ -28,10 +28,10 @@
     width: max(100px, 150px);
     padding: 0 10px;
     cursor: pointer;
-    background-color: var(--red);
+    background-color: var(--blue);
     color: var(--font-white);
 }
 
 .wrapper button:hover {
-    background-color: var(--orange-light);
+    opacity: 0.8;
 }

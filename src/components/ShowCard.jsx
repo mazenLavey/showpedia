@@ -9,7 +9,8 @@ import { useInView } from 'react-intersection-observer';
 import FavoriteBtn from "./FavoriteBtn";
 import WatchedBtn from "./WatchedBtn";
 
-const ShowCard = ({data})=>{
+
+const ShowCard = ({data, badges = false, streamingDate})=>{
     const [hovered, setHovered] = useState(false);
     const [isComplete, setIsComplete] = useState(false);
 
@@ -34,7 +35,7 @@ const ShowCard = ({data})=>{
 
 
     return (
-        <div className={ShowCardCSS.card} onMouseEnter={handelHover} onMouseLeave={handelHover} ref={ref}>
+        <div className={ShowCardCSS.card} onMouseEnter={handelHover} onMouseLeave={handelHover} ref={ref} >
             <div  className={ShowCardCSS.frontFace}>
                 {
                     isComplete ? null:
@@ -42,7 +43,11 @@ const ShowCard = ({data})=>{
                         <ShowCardSkeleton />
                     </div>
                 }
-                {inView && <img src={data.image.medium} alt={data.name} onLoad={handelLoadingImg}/>}
+                {inView && 
+                <>
+                    {badges && <span className={ShowCardCSS.badges}>Season: {streamingDate.season} <span style={{color: "var(--main-color)"}}>|</span> Episode: {streamingDate.number}</span>}
+                    <img src={data.image.medium} alt={data.name} onLoad={handelLoadingImg}/>
+                </>}
             </div>
             {
                 hovered && isComplete && inView &&

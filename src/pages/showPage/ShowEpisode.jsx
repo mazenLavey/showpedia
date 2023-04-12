@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 import { useEffect, useState } from 'react';
 import SeasonBtn from './SeasonBtn';
 import EpisodeCard from './EpisodeCard';
-import ShowEpisodeCSS from './ShowEpisode.module.css';
+import ShowEpisodeCSS from './css/ShowEpisode.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileExcel} from '@fortawesome/free-solid-svg-icons';
 

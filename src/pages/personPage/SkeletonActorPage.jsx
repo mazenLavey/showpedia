@@ -1,7 +1,7 @@
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import ShowCardSkeleton from '../../components/ShowCardSkeleton';
-import SkeletonActorPageCSS from './SkeletonActorPage.module.css';
+import SkeletonActorPageCSS from './css/SkeletonActorPage.module.css';
 
 const SkeletonActorPage = ()=>{
     return (

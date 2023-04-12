@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 tasks.md
+/src/developFun
 
 # testing
 /coverage

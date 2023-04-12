@@ -21,17 +21,24 @@
     font-style: italic;
 }
 
-.wrapper button {
+.search__btn {
     font-size: var(--font-400);
     border: none;
     height: 100%;
     width: max(100px, 150px);
-    padding: 0 10px;
     cursor: pointer;
     background-color: var(--main-color);
     color: var(--font-white);
 }
 
-.wrapper button:hover {
+.search__btn > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.search__btn:hover {
     opacity: 0.9;
 }

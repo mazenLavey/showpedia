@@ -1,32 +1,16 @@
+import React, { useState } from 'react';
 import matchText from '../../functions/matchText';
-import ShowInfoCSS from './ShowInfo.module.css';
+import ShowInfoCSS from './css/ShowInfo.module.css';
+import FavoriteBtn from '../../components/FavoriteBtn';
+import WatchedBtn from '../../components/WatchedBtn';
+import ShowBackground from './ShowBackground';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilm, faStar } from '@fortawesome/free-solid-svg-icons';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import { useEffect, useState } from 'react';
-import FavoriteBtn from '../../components/FavoriteBtn';
-import WatchedBtn from '../../components/WatchedBtn';
-import useFetch from '../../hooks/useFetch';
-import { Blurhash  } from "react-blurhash";
 
 const ShowInfo = ({data, dataIsLoaded = true})=>{
     const [imgLoaded, setImgLoaded] = useState(false);
-    const [bgImg, setBgImg] = useState("");
-    const [bgImgLoaded, setBgImgLoaded] = useState(false);
-    const [bgImgData, imgIsLoaded] = useFetch(`https://api.tvmaze.com/shows/${data.id}/images`);
-
-    useEffect(()=>{
-        if(imgIsLoaded){
-            const bgImg = bgImgData.filter(el => el.type === "background");
-            if(bgImg.length > 0) {
-                const higthResImg = bgImg.filter(el => el.resolutions.original.height > 1000);
-                if (higthResImg.length > 0) {
-                    setBgImg(higthResImg[0].resolutions.original.url);
-                }
-            };
-        };
-    }, [bgImgData, imgIsLoaded])
 
     function getSummary() {
         if (dataIsLoaded && data.summary) {
@@ -64,19 +48,12 @@ const ShowInfo = ({data, dataIsLoaded = true})=>{
         setImgLoaded(e.target.complete);
     }
 
-    function handelLoadingBgImg(e){
-        setBgImgLoaded(e.target.complete);
-    }
-
     return (
         <>
         {
             dataIsLoaded?
             <section className={`${ShowInfoCSS.wrapper} section-margin`}>
-                <div className={ShowInfoCSS.background}>
-                    {bgImgLoaded? null: <Blurhash hash='LGC6rnIV00-p~qV@4otRENt6xCNb' width={"100%"} height={"100%"} className={ShowInfoCSS.bg__blurhash} style={{zIndex: 1}}/>}
-                    <img src={bgImg} alt={data.name} onLoad={handelLoadingBgImg}/>
-                </div>
+                <ShowBackground data={data}/>
                 <div className={ShowInfoCSS.img__container}>
                     {imgLoaded? null: <Skeleton />}
                     <img src={data.image.original} alt={data.name} onLoad={handelLoadingImg}/>
@@ -112,4 +89,4 @@ const ShowInfo = ({data, dataIsLoaded = true})=>{
     )
 };
 
-export default ShowInfo;
+export default React.memo(ShowInfo);

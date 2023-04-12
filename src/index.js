@@ -1,28 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {ShowDataProvider} from './context/ShowsData';
-import { FavoriteDataProvider } from './context/FavoriteData';
-import { WatchedDataProvider } from './context/WatchedData';
-import { ActorsDataProvider } from './context/ActorsData';
-import { StreamingDataProvider } from './context/StreamingData';
+import {SearchContextProvider} from './context/SearchContext';
+import { FavoriteContextProvider } from './context/FavoriteContext';
+import { WatchedContextProvider } from './context/WatchedContext';
+import { DefaultDataContextProvider } from './context/DefaultDataContext';
+import App from './App';
 import './normalize.css';
 import './index.css';
-import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-      <ShowDataProvider >
-        <ActorsDataProvider>
-          <FavoriteDataProvider>
-            <WatchedDataProvider>
-              <StreamingDataProvider>
+      <SearchContextProvider >
+          <FavoriteContextProvider>
+            <WatchedContextProvider>
+              <DefaultDataContextProvider>
                 <App />
-              </StreamingDataProvider>
-            </WatchedDataProvider>
-          </FavoriteDataProvider>
-        </ActorsDataProvider>
-      </ShowDataProvider>
+              </DefaultDataContextProvider>
+            </WatchedContextProvider>
+          </FavoriteContextProvider>
+      </SearchContextProvider>
   </React.StrictMode>
 );
 

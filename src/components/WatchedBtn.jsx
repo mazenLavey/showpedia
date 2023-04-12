@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from "react";
-import { WatchedData } from "../context/WatchedData";
+import { WatchedContext } from "../context/WatchedContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faCircleCheck} from '@fortawesome/free-regular-svg-icons';
 import WatchedBtnCSS from './WatchedBtn.module.css';
 
 const WatchedBtn = ({data})=>{
     const [isWatched, setIsWatched] = useState(false);
-    const {watchedList, addToWatched, removeFromWatched} = useContext(WatchedData);
+    const {watchedList, addToWatched, removeFromWatched} = useContext(WatchedContext);
 
     useEffect(()=>{
         if(watchedList.length > 0) {

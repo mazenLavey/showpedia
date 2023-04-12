@@ -1,5 +1,5 @@
 import {useState } from 'react';
-import PersonInfoCSS from './PersonInfo.module.css';
+import PersonInfoCSS from './css/PersonInfo.module.css';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 

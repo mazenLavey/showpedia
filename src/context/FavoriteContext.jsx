@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 
-const FavoriteData = React.createContext();
+const FavoriteContext = React.createContext();
 
-const FavoriteDataProvider = (props) =>{
+const FavoriteContextProvider = (props) =>{
     const [ favoritesList, setFavoritesList] = useState([]);
 
     function addToFavorite(itemData) {
@@ -31,10 +31,10 @@ const FavoriteDataProvider = (props) =>{
     }, []);
 
     return (
-        <FavoriteData.Provider value={{favoritesList, addToFavorite, removeFromFavorite}}>
+        <FavoriteContext.Provider value={{favoritesList, addToFavorite, removeFromFavorite}}>
             {props.children}
-        </FavoriteData.Provider>
+        </FavoriteContext.Provider>
     )
 }
 
-export {FavoriteDataProvider, FavoriteData};
+export {FavoriteContextProvider, FavoriteContext};

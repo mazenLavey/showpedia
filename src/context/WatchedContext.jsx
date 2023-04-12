@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 
-const WatchedData = React.createContext();
+const WatchedContext = React.createContext();
 
-const WatchedDataProvider = (props) =>{
+const WatchedContextProvider = (props) =>{
     const [ watchedList, setwatchedList] = useState([]);
 
     function addToWatched(itemData) {
@@ -31,10 +31,10 @@ const WatchedDataProvider = (props) =>{
     }, []);
 
     return (
-        <WatchedData.Provider value={{watchedList, addToWatched, removeFromWatched}}>
+        <WatchedContext.Provider value={{watchedList, addToWatched, removeFromWatched}}>
             {props.children}
-        </WatchedData.Provider>
+        </WatchedContext.Provider>
     )
 }
 
-export {WatchedDataProvider, WatchedData};
+export {WatchedContextProvider, WatchedContext};

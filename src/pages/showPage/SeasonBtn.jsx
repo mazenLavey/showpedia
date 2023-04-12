@@ -1,4 +1,4 @@
-import SeasonBtnCSS from './SeasonBtn.module.css';
+import SeasonBtnCSS from './css/SeasonBtn.module.css';
 
 const SeasonBtn = ({num, handelClick, selectedSeasons})=>{
 
