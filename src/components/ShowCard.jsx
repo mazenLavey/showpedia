@@ -56,7 +56,7 @@ const ShowCard = ({data, badges = false, streamingDate})=>{
                 <div className={ShowCardCSS.backFace}>
                     <h2 className={ShowCardCSS.title}>{data.name}</h2>
                     <div className={ShowCardCSS.genre}>
-                        {data.genres.join(' | ')}
+                        {data.genres && data.genres.join(' | ')}
                     </div>
                     <div className={ShowCardCSS.info}>
                         <span><FontAwesomeIcon icon={faFilm} /> {data.averageRuntime? data.averageRuntime: "unKnown"}</span>

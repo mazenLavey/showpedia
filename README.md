@@ -1,5 +1,5 @@
 ## Live demo
-streaming-and-shows-search-engine.netlify.app
+https://streaming-and-shows-search-engine.netlify.app
 
 # Getting Started with Create React App
 
