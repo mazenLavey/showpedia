@@ -1,0 +1,59 @@
+.loading {
+    display: flex;
+    padding-top: 30vh;
+    justify-content: center;
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 100vh;
+    min-height: calc(100% + 20px);
+    background-color: var(--dark-blue);
+    z-index: 100;
+}
+
+@media (min-width: 576px) {
+    .loading  {
+        top: 50px;
+    }
+}
+
+.shapes {
+    width: 57.6px;
+    height: 57.6px;
+    color: var(--main-color);
+    position: relative;
+    background: linear-gradient(currentColor 0 0) center/100% 14.4px,
+        linear-gradient(currentColor 0 0) center/14.4px 100%;
+    background-repeat: no-repeat;
+}
+
+.shapes:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(currentColor 0 0) 0 0,
+        linear-gradient(currentColor 0 0) 100% 0,
+        linear-gradient(currentColor 0 0) 0 100%,
+        linear-gradient(currentColor 0 0) 100% 100%;
+    background-size: 21.6px 21.6px;
+    background-repeat: no-repeat;
+    animation: shapes 1.2s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+
+@keyframes shapes {
+    33% {
+        inset: -14.4px;
+        transform: rotate(0deg);
+    }
+
+    66% {
+        inset: -14.4px;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        inset: 0;
+        transform: rotate(90deg);
+    }
+}

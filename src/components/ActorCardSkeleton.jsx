@@ -9,10 +9,10 @@ const ActorCardSkeleton = ({cards}) =>{
             return (
                 <div key={index} className={ActorCardSkeletonCSS.card}>
                     <div>
-                    <Skeleton  height={'100%'} style={{display: "flex", borderRadius: "8px"}} />
+                    <Skeleton  height={'100%'} style={{display: "flex", borderRadius: "8px"}} highlightColor='#d5d4d4'/>
                     </div>
                     <div>
-                    <Skeleton count={0.4}/>
+                    <Skeleton count={0.4} highlightColor='#d5d4d4'/>
                     </div>
                 </div>
             );

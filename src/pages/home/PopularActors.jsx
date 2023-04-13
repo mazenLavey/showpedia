@@ -4,6 +4,7 @@ import ActorCard from "../../components/ActorCard";
 import ActorCardSkeleton from "../../components/ActorCardSkeleton";
 import PopularActorsCSS from './css/PopularActors.module.css';
 import { nanoid } from "nanoid";
+import PreLoading from "../../components/PreLoading";
 
 const PopularActors = ()=>{
     const {popularActors} = useContext(DefaultDataContext);
@@ -19,8 +20,9 @@ const PopularActors = ()=>{
     }
 
     return (
-        <section>
+        <section style={{position: "relative"}}>
             <h2>Popular Actors</h2>
+            <PreLoading />
             <div className={PopularActorsCSS.wrapper}>
                 {popularActors.length > 0? renderElements() : <ActorCardSkeleton cards={8}/>}
             </div>

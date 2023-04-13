@@ -1,9 +1,22 @@
-
 .wrapper {
     overflow: hidden;
     padding: 25px 5px;
     position: relative;
+    min-height: 380px;
 }
+
+@media (min-width: 576px) {
+    .wrapper {
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        min-height: 420px;
+    }
+}
+
 
 .wrapper::after {
     content: "";
@@ -11,7 +24,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    width: 40px;
+    width: 15px;
     background-image: linear-gradient(to left, var(--dark-blue), transparent);
     z-index: 100;
 }
@@ -53,5 +66,3 @@
     font-size: var(--font-600);
     color: var(--font-white);
 }
-
-

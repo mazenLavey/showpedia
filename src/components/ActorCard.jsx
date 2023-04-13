@@ -23,7 +23,7 @@ const ActorCard = ({data})=>{
                 {inView && 
                 <>
                 <div className={ActorCardCSS.img__container}>
-                    {imgLoaded? null : <Skeleton />}
+                    {imgLoaded? null : <Skeleton highlightColor='#d5d4d4' />}
                     <img src={data.person.image.medium || data.person.image.original} alt={data.person.name && data.person.name} onLoad={handelLoadImg} />
                 </div>
                 <p className={ActorCardCSS.name}>{data.person.name && data.person.name} {data.person.country && `- ${data.person.country.code}`}</p>

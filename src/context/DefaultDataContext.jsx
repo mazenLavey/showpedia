@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
-// import useFetch from "../hooks/useFetch";
+import { ref, onValue} from "firebase/database";
+import {db} from '../config/firebase';
 
 const DefaultDataContext = createContext();
 
@@ -7,13 +8,13 @@ const DefaultDataContextProvider = (props)=>{
     const [popularActors, setPopularActors] = useState([]);
     const [topShows, setTopShows] = useState([]);
 
-    async function getData() {
-        const [actors, shows] = await Promise.all([
-            fetch('http://localhost:3000/data/actorsData.json').then(res => res.json()),
-            fetch('http://localhost:3000/data/topRatedShowsData.json').then(res => res.json()),
-        ]);
-        setPopularActors(actors);
-        setTopShows(shows);
+    function getData() {
+        onValue(ref(db), data =>{
+            const actors = data.val()[0].actors;
+            const shows = data.val()[0].shows;
+            setPopularActors(actors);
+            setTopShows(shows);
+        })
     };
 
     useEffect(()=>{

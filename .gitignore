@@ -6,6 +6,7 @@
 .pnp.js
 tasks.md
 /src/developFun
+/database
 
 # testing
 /coverage
@@ -19,6 +20,7 @@ tasks.md
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*

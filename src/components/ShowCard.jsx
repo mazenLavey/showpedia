@@ -30,7 +30,9 @@ const ShowCard = ({data, badges = false, streamingDate})=>{
     }
 
     function handelLoadingImg(e) {
-        setIsComplete(e.target.complete);
+        setTimeout(()=>{
+            setIsComplete(e.target.complete);
+        }, 500);
     }
 
 

@@ -179,3 +179,23 @@ h3 {
   }
 }
 /* end global */
+
+/* start slider */
+.swiper-button-next, .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: var(--main-color);
+  font-size: var(--font-600);
+  font-weight: bold;
+}
+
+.swiper-pagination-fraction {
+  bottom: -30px;
+  font-size: var(--font-300);
+}
+/* end slider */

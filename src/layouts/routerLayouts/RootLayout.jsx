@@ -5,12 +5,13 @@ import BreadCrumbs from "../../components/BreadCrumbs";
 import ScrollToTop from '../../functions/ScrollToTop';
 
 const RootLayout = ()=>{
+
     return (
         <>
         <ScrollToTop>
             <Header />
             <BreadCrumbs />
-            <Outlet />
+                <Outlet />
             <Footer />
         </ScrollToTop>
         </>

@@ -39,12 +39,14 @@ const Home = ()=>{
     return (
         <main className={`${HomeCSS.wrapper} container`}>
             <SearchBar searchType={searchType} handelClick={handelClick}/>
+
             {
                 dataFromSearch?
                 <ResultPage resultType={searchType}/>
                 :
                 <DefaultPage searchType={searchType}/>
             }
+    
         </main>
     );
 };

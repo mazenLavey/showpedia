@@ -1,20 +1,15 @@
 import PopularActors from './PopularActors';
-import StreamingList from './StreamingList';
-import TopRatedShows from './TopRatedShows';
-
+import PopularShows from './PopularShows';
 
 const DefaultPage = ({searchType})=>{
     return (
-        <>
+        <div>
         {searchType === "byShow" ? 
-            <>
-                <StreamingList />
-                <TopRatedShows />
-            </>
+            <PopularShows />
             : 
             <PopularActors />
         }
-        </>
+        </div>
     );
 };
 
