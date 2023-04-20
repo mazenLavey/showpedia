@@ -29,7 +29,7 @@ const PersonInfo = ({data, dataIsLoaded = true})=>{
 
             <section className={`${PersonInfoCSS.wrapper} section-margin`}>
                 <div className={PersonInfoCSS.img__container}>
-                    {imgLoaded? null :<Skeleton height={"100%"} width={"100%"} style={{position: "absolute", top: 0, left: 0}}/>}
+                    {imgLoaded? null :<Skeleton highlightColor='#d5d4d4' height={"100%"} width={"100%"} style={{position: "absolute", top: 0, left: 0,}}/>}
                     <img src={data.image.original} alt={data.name} onLoad={handelLoading} />
                 </div>
                 <div className={PersonInfoCSS.info}>

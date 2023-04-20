@@ -55,7 +55,7 @@ const ShowInfo = ({data, dataIsLoaded = true})=>{
             <section className={`${ShowInfoCSS.wrapper} section-margin`}>
                 <ShowBackground data={data}/>
                 <div className={ShowInfoCSS.img__container}>
-                    {imgLoaded? null: <Skeleton />}
+                    {imgLoaded? null: <Skeleton highlightColor='#d5d4d4'/>}
                     <img src={data.image.original} alt={data.name} onLoad={handelLoadingImg}/>
                 </div>
                 <div className={ShowInfoCSS.info}>

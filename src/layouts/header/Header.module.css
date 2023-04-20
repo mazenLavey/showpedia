@@ -14,13 +14,20 @@
 }
 
 .logo {
-    font-size: var(--font-700);
-    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: var(--font-600);
+    text-transform: capitalize;
     font-weight: 800;
     letter-spacing: 2px;
     transition: 0.3s;
 }
 
 .logo:hover {
-    letter-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.logo > img {
+    width: 22px;
 }
