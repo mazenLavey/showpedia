@@ -58,8 +58,8 @@
   --font-300: 0.875rem;
   --font-400: 1rem;
   --font-600: 1.25rem;
-  --font-700: 2rem;
-  --font-xl: 3rem;
+  --font-700: 1.5rem;
+  --font-xl: 2.5rem;
 }
 
 @media (max-width: 575px) {
@@ -67,8 +67,8 @@
       --font-300: 0.75rem;
       --font-400: 0.9rem;
       --font-600: 1rem;
-      --font-700: 1.5rem;
-      --font-xl: 2rem;
+      --font-700: 1.2rem;
+      --font-xl: 1.8rem;
   }
 }
 

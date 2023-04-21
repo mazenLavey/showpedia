@@ -14,7 +14,7 @@ const StreamingSlider = ({ streamingList, dataIsLoaded }) => {
 
     const elements = streamingList.map(el => {
         return <SwiperSlide key={nanoid()}><ShowCard data={el._embedded.show} badges={true} streamingDate={{ season: el.season, number: el.number }} /></SwiperSlide>
-    })
+    });
 
     return (
         <>
@@ -26,7 +26,7 @@ const StreamingSlider = ({ streamingList, dataIsLoaded }) => {
                     pagination={{
                         type: "fraction",
                     }}
-                    navigation={true}
+                    navigation={isMobileScreen? false : true}
                     modules={[Pagination, Navigation]}
                 >
                     {elements}

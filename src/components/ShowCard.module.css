@@ -22,6 +22,23 @@
     height: 100%;
 }
 
+.unflip__badges,
+.info__badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 40px;
+    height: 25px;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    background-color: #e21221b2;
+    font-size: var(--font-400);
+    cursor: pointer;
+}
+
 .skeleton {
     position: absolute;
     top: 0;
