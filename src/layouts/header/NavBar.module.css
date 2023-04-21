@@ -5,6 +5,12 @@
     font-size: var(--font-300);
 }
 
+@media (min-width: 576px) {
+    .wrapper ul {
+        font-size: var(--font-400);
+    }
+}
+
 .wrapper ul li {
     cursor: pointer;
     position: relative;
@@ -27,6 +33,9 @@
 }
 
 .wrapper ul li a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
     opacity: 0.5;
 }
 

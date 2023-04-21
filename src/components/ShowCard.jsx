@@ -24,9 +24,9 @@ const ShowCard = ({data, badges = false, streamingDate})=>{
     });
 
     function handelHover(e) {
-        if (e.type === "mouseleave" ) {
+        if (e.type === "mouseleave" && !isMobileScreen && !isTabletScreen) {
             setHovered(false);
-        } else if(e.type === "mouseenter" ) {
+        } else if(e.type === "mouseenter" && !isMobileScreen && !isTabletScreen) {
             setHovered(true);
         };
     }
@@ -38,7 +38,6 @@ const ShowCard = ({data, badges = false, streamingDate})=>{
     };
 
     function flipCard(e) {
-        console.log('click')
         e.stopPropagation();
         if (!hovered) {
             setHovered(true);
@@ -65,7 +64,7 @@ const ShowCard = ({data, badges = false, streamingDate})=>{
                 <>
                     {badges && <span className={ShowCardCSS.badges}>Season: {streamingDate.season} <span style={{color: "var(--main-color)"}}>|</span> Episode: {streamingDate.number}</span>}
                     <img src={data.image.medium} alt={data.name} onLoad={handelLoadingImg}/>
-                    {isComplete && (isMobileScreen || isTabletScreen) && <span className={ShowCardCSS.info__badges} onTouchStart={flipCard}>
+                    {isComplete && (isMobileScreen || isTabletScreen) && !hovered && <span className={ShowCardCSS.info__badges} onTouchStart={flipCard}>
                         <FontAwesomeIcon icon={faInfo} />
                     </span>}
                 </>}
