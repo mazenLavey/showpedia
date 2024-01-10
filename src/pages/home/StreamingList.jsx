@@ -3,19 +3,13 @@ import StreamingListCSS from './css/StreamingList.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlassChart } from '@fortawesome/free-solid-svg-icons';
 import StreamingSlider from "./StreamingSlider";
-
+import { format } from "date-fns";
 
 const StreamingList = ()=>{
-    const {streamingList, dataIsLoaded, changeCountry} = GetStreamingData();
+    const {streamingList, isLoading, changeCountry} = GetStreamingData();
 
     function getDate() {
-        const options = {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-        };
-        const today = new Date().toLocaleDateString("en-US", options);
-        return today;
+        return format(new Date(), 'MMM dd, yyy');;
     }
 
     function handelChange(e) {
@@ -41,7 +35,7 @@ const StreamingList = ()=>{
                 streamingList.length === 0 ? 
                 <p className={StreamingListCSS.noData}>there are no streaming shows for today, try another country  <FontAwesomeIcon icon={faMagnifyingGlassChart} style={{fontSize: "var(--font-600)"}}/></p> 
                 : 
-                <StreamingSlider streamingList={streamingList} dataIsLoaded={dataIsLoaded}/>
+                <StreamingSlider streamingList={streamingList} isLoading={isLoading}/>
                 }
             </div>
         </section>

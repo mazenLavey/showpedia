@@ -1,3 +1,4 @@
+import { getActorByQuery, getShowByQuery } from "api/index";
 import React, { useState} from "react";
 
 const SearchContext = React.createContext();
@@ -25,26 +26,31 @@ const SearchContextProvider = (props) =>{
         setDataFromSearch(false);
     }
 
-    async function getActorDataFromApi(actorName) {
-        const apiUrl = `https://api.tvmaze.com/search/people?q=${actorName}`;
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-        const cleanData = data.filter(el => el.person.image);
+    const getActorDataFromApi = async (actorName) => {
+        try {
+            const { data } = await getActorByQuery(actorName);
 
-        setActorsData(cleanData);
-        setActorsAreLoaded(true);
-        setDataFromSearch(true);
+            const cleanData = data.filter(el => el.person.image);
+            setActorsData(cleanData);
+            setActorsAreLoaded(true);
+            setDataFromSearch(true);
+
+        } catch(err) {
+            console.error( '[getActorByQuery]', err)
+        }
     };
 
-    async function getShowDataFromApi(showTitle) {
-        const apiUrl = `https://api.tvmaze.com/search/shows?q=${showTitle}`;
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-        const cleanData = data.filter(el => el.show.image);
-
-        setShowsData(cleanData);
-        setShowsAreLoaded(true);
-        setDataFromSearch(true);
+    const getShowDataFromApi = async(showTitle) => {
+        try {
+            const { data } = await getShowByQuery(showTitle);
+            const cleanData = data.filter(el => el.show.image);
+            
+            setShowsData(cleanData);
+            setShowsAreLoaded(true);
+            setDataFromSearch(true);
+        } catch(err) {
+            console.log('[getShowByQuery]', err)
+        }
     };
     
     return (

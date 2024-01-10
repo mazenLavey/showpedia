@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import { nanoid } from 'nanoid';
 import TopRatedShowsCSS from './css/TopRatedShows.module.css';
-import ShowCard from '../../components/ShowCard';
-import ShowCardSkeleton from '../../components/ShowCardSkeleton';
-import useMedia from '../../hooks/useMedia';
-import { DefaultDataContext } from "../../context/DefaultDataContext";
+import ShowCard from 'components/ShowCard';
+import ShowCardSkeleton from 'components/ShowCardSkeleton';
+import useMedia from 'hooks/useMedia';
+import { DefaultDataContext } from "context/DefaultDataContext";
 
 const TopRatedShows = ()=>{
     const {topShows} = useContext(DefaultDataContext);
@@ -12,13 +11,9 @@ const TopRatedShows = ()=>{
     const [storedData, setStoredData] = useState([]);
 
     const renderNewElements = ()=>{
-        const elements = storedData.filter(el => el.image && el.name).map( el=>{
-            return <ShowCard key={nanoid()} data={el}/>
-        });
+        const elements = storedData.filter(el => el.image && el.name).map( el=> <ShowCard key={el.id} data={el}/>);
         return elements;
     };
-
-    // console.log(storedData);
 
     useEffect(()=>{
         let start = 0;

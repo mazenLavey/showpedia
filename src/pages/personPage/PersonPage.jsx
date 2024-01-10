@@ -8,7 +8,6 @@ const PersonPage = () => {
     const navigation = useNavigation();
 
     if(navigation.state === "loading") {
-        console.log('loading')
         return <SkeletonActorPage />;
     }
 

@@ -1,14 +1,15 @@
+import { getShowCast, getShowEpisodes, getShowInfoById } from "api/index";
 
 export const showDataLoader = async ({params})=>{
     try {
         const [infoData, episodeData, castData] = await Promise.all([
-            fetch(`https://api.tvmaze.com/shows/${params.showId}`).then(res => res.json()),
-            fetch(`https://api.tvmaze.com/shows/${params.showId}/episodes`).then(res => res.json()),
-            fetch(`https://api.tvmaze.com/shows/${params.showId}/cast`).then(res => res.json())
+            getShowInfoById(params.showId),
+            getShowEpisodes(params.showId),
+            getShowCast(params.showId),
         ]);
-    return [infoData, episodeData, castData]
-    } catch(e) {
-        console.log("error from actors loader", e)
+    return [infoData.data, episodeData.data, castData.data]
+    } catch(err) {
+        console.log("[error from actors loader]", err)
         throw new Error('Error fetching data');
     };
 }
