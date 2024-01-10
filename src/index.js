@@ -11,7 +11,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
       <SearchContextProvider >
           <FavoriteContextProvider>
             <WatchedContextProvider>
@@ -21,6 +21,6 @@ root.render(
             </WatchedContextProvider>
           </FavoriteContextProvider>
       </SearchContextProvider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 

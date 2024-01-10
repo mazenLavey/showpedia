@@ -1,13 +1,13 @@
-import PopularActors from './PopularActors';
-import PopularShows from './PopularShows';
+import Actors from './Actors';
+import Shows from './Shows';
 
 const DefaultPage = ({searchType})=>{
     return (
         <div>
         {searchType === "byShow" ? 
-            <PopularShows />
+            <Shows />
             : 
-            <PopularActors />
+            <Actors />
         }
         </div>
     );

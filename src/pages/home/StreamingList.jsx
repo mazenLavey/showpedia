@@ -6,7 +6,7 @@ import StreamingSlider from "./StreamingSlider";
 import { format } from "date-fns";
 
 const StreamingList = ()=>{
-    const {streamingList, isLoading, changeCountry} = GetStreamingData();
+    const {streamingList, changeCountry} = GetStreamingData();
 
     function getDate() {
         return format(new Date(), 'MMM dd, yyy');;
@@ -35,7 +35,7 @@ const StreamingList = ()=>{
                 streamingList.length === 0 ? 
                 <p className={StreamingListCSS.noData}>there are no streaming shows for today, try another country  <FontAwesomeIcon icon={faMagnifyingGlassChart} style={{fontSize: "var(--font-600)"}}/></p> 
                 : 
-                <StreamingSlider streamingList={streamingList} isLoading={isLoading}/>
+                <StreamingSlider streamingList={streamingList}/>
                 }
             </div>
         </section>

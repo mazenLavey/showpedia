@@ -6,45 +6,53 @@ import { getAllShows } from "api/index";
 const DefaultDataContext = createContext();
 
 const DefaultDataContextProvider = ({ children })=>{
-    const [popularActors, setPopularActors] = useState([]);
-    const [topShows, setTopShows] = useState([]);
-
-    const getData = async() => {
-        try {
-            const snapshot = await get(ref(db));
-
-            if (!snapshot.exists()) return;
-
-            const data = snapshot.val()[0].actors;
-            const cleanData = data.filter(el => el.person.image);
-
-            setPopularActors(cleanData);
-
-        } catch (error) {
-            console.error('[Error fetching actors data]', error);
-        }
-    };
-
+    const [ popularActors, setPopularActors ] = useState([]);
+    const [ showsList, setShowsList ] = useState([]);
+    const [ currentShowsPage, setCurrentShowsPage ] = useState(0);
+    const [ hasMore, setHasMore ] = useState(true);
+    
     useEffect(()=>{
-        getData();
+        const getPopularActors = async() => {
+            try {
+                const snapshot = await get(ref(db));
+    
+                if (!snapshot.exists()) return;
+    
+                const data = snapshot.val()[0].actors;
+                const cleanData = data.filter(el => el.person.image);
+    
+                setPopularActors(cleanData);
+    
+            } catch (error) {
+                console.error('[Error fetching actors data]', error);
+            }
+        };
+
+        getPopularActors();
     }, []);
 
     useEffect(()=>{
-        const getData = async() =>{
+        const getShowsList = async() =>{
             try {
-                const { data } = await getAllShows(1)
-                setTopShows(data);
+                const { data } = await getAllShows(currentShowsPage)
+                setShowsList(prev => [...prev, ...data]);
 
-            } catch(err) {
-                console.log(err)
+            } catch {
+                setHasMore(false)
             }
         }
 
-        getData();
-    }, []);
+        getShowsList();
+    }, [currentShowsPage]);
+
+    const fetchMoreShows = () => {
+        if (!hasMore) return;
+
+        setCurrentShowsPage(prev => prev + 1 )
+    }
 
     return (
-        <DefaultDataContext.Provider value={{popularActors, topShows}}>
+        <DefaultDataContext.Provider value={{popularActors, showsList, fetchMoreShows, hasMore}}>
             { children }
         </DefaultDataContext.Provider>
     );

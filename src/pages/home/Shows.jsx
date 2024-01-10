@@ -1,13 +1,13 @@
 import StreamingList from './StreamingList';
-import TopRatedShows from './TopRatedShows';
+import ShowsList from './ShowsList';
 
-const PopularShows = ()=>{
+const Shows = ()=>{
     return (
         <section style={{position: "relative"}}>
             <StreamingList />
-            <TopRatedShows />
+            <ShowsList />
         </section>
     );
 };
 
-export default PopularShows;
+export default Shows;
