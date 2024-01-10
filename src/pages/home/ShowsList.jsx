@@ -19,8 +19,9 @@ const ShowsList = ()=>{
         return elements;
     };
 
-
     useEffect(()=>{
+        if(!showsList) return;
+
         fetchData();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -28,20 +29,20 @@ const ShowsList = ()=>{
 
     const fetchData = () => {
         if(!showsList) return;
-
+        
         if(storedData.length < showsList.length) {
             const slicedData = showsList.slice(storedData.length, storedData.length + SLICE_AMOUNT);
             setStoredData(prev => [...prev, ...slicedData]);
 
-        } else {
+        } else if(storedData.length > 0) {
             fetchMoreShows();
         }
     }
 
     return (
-        <section >
+        <section>
             <h2>Shows</h2>
-            <div  className="section-margin">
+            <div className="section-margin">
                 {showsList.length > 0? 
                     <InfiniteScroll
                         dataLength={storedData.length}
