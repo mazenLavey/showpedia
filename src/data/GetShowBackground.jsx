@@ -1,22 +1,30 @@
 import { useEffect, useState } from "react";
-import useFetch from '../hooks/useFetch';
+import { getShowBackgroundById } from "api/index";
 
 const GetShowBackground = (dataId)=>{
     const [bgImg, setBgImg] = useState("");
-    const [bgImgData, imgIsLoaded] = useFetch(`https://api.tvmaze.com/shows/${dataId}/images`);
 
     useEffect(()=>{
-        if(imgIsLoaded){
-            const bgImg = bgImgData.filter(el => el.type === "background");
-            if(bgImg.length > 0) {
-                const higthResImg = bgImg.filter(el => el.resolutions.original.height > 1000);
-                if (higthResImg.length > 0) {
-                    setBgImg(higthResImg[0].resolutions.original.url);
-                }
-            };
-        };
-    }, [bgImgData, imgIsLoaded]);
+        const getBackground = async() => {
+            try {
+                const { data } = await getShowBackgroundById(dataId);
 
+                const bgImg = data.filter(el => el.type === "background");
+                if(!bgImg) return;
+
+                const higthResImg = bgImg.filter(el => el.resolutions.original.height >= 720);
+                
+                if (higthResImg.length > 0) {
+                    setBgImg(higthResImg[higthResImg.length - 1].resolutions.original.url);
+                }
+
+            } catch(err) {
+                console.error('[getShowBackgroundById]', err);
+            }
+        };
+
+        getBackground();
+    }, [dataId])
 
     return[bgImg];
 }

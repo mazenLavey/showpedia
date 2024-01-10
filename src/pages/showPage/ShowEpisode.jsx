@@ -1,4 +1,3 @@
-import { nanoid } from 'nanoid';
 import { useEffect, useState } from 'react';
 import SeasonBtn from './SeasonBtn';
 import EpisodeCard from './EpisodeCard';
@@ -24,7 +23,7 @@ const ShowEpisode = ({data, dataIsLoaded = true})=>{
 
     function renderEpisodesBySeasonsNum(num) {
         if (dataIsLoaded) {
-            const elements = data.filter(el => +el.season === num).map(el => <EpisodeCard key={nanoid()} data={el}/>)
+            const elements = data.filter(el => +el.season === num).map(el => <EpisodeCard key={el.id} data={el}/>)
             return elements;
         }
     }
@@ -35,7 +34,7 @@ const ShowEpisode = ({data, dataIsLoaded = true})=>{
 
     function renderSeasonBtns() {
         if (dataIsLoaded) {
-            const elements = seasonsNumber.map(num => <SeasonBtn key={nanoid()} num={num} handelClick={handelClick} selectedSeasons={selectedSeasons}/>);
+            const elements = seasonsNumber.map(num => <SeasonBtn key={num} num={num} handelClick={handelClick} selectedSeasons={selectedSeasons}/>);
             return elements;
         }
     }

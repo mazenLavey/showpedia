@@ -1,20 +1,13 @@
-import { nanoid } from 'nanoid';
-import ShowCard from '../../components/ShowCard';
+import ShowCard from 'components/ShowCard';
 import PersonShowsCSS from './css/PersonShows.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileExcel} from '@fortawesome/free-solid-svg-icons';
-
-
 
 const PersonShows= ({data, dataIsLoaded=true})=>{
 
     function renderElement() {
         if (dataIsLoaded) {
-            const element = data.map(el => {
-                return (
-                    <ShowCard key={nanoid()} data={el._embedded.show}/>
-                )
-            })
+            const element = data.map((el, index) => <ShowCard key={index} data={el._embedded.show}/>)
             return element;
         }
     }

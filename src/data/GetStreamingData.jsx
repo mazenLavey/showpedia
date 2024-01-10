@@ -1,20 +1,25 @@
 import { useEffect, useState } from "react";
+import { getStreamingByCountry } from "api/index";
+import { format } from "date-fns";
 
 const GetStreamingData = ()=>{
     const [streamingList, setStreamingList] = useState([]);
-    const [dataIsLoaded, setDataIsLoaded] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const [country, setCountry] = useState("US")
 
     useEffect(()=>{
-        const todayDate = getDate();
-        const url = `https://api.tvmaze.com/schedule/web?date=${todayDate.year}-${todayDate.month}-${todayDate.day}&country=${country}`;
+        const getStreamingList = async() => {
+            const todayDate = format(new Date(), 'yyyy-MM-dd');
 
-        fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            if(data) {
+            try {
+                setIsLoading(true);
+    
+                const { data } = await getStreamingByCountry(todayDate, country);
+                if (!data) return;
+
                 const filteredData = data.filter(el => el.airdate && el.season && el.number && el._embedded.show.image && el._embedded.show.name);
                 let idArray = [];
+
                 const listOfUniqueShows = filteredData.filter(el => {
                     const showId = el._embedded.show.id;
                     if (!idArray.includes(showId)) {
@@ -25,6 +30,7 @@ const GetStreamingData = ()=>{
                     }
                     
                 });
+
                 listOfUniqueShows.forEach(el => {
                     const currentShowId = el._embedded.show.id;
                     let count = 0;
@@ -34,7 +40,7 @@ const GetStreamingData = ()=>{
                         };
                         return elAgainst;
                     });
-
+    
                     if(count > 1) {
                         let firstEpisodeNum = el.number;
                         for (let i=1; i < count; i++) {
@@ -44,29 +50,22 @@ const GetStreamingData = ()=>{
                     };
                 });
 
+    
                 setStreamingList(listOfUniqueShows);
-                setDataIsLoaded(true);
-            } 
-        });
-    }, [country]);
-
-    function getDate() {
-        const date = new Date();
-        const month = date.getMonth() +1;
-        const day = date.getDate();
-        const today = {
-            year: date.getFullYear(),
-            month: month.toString().length === 1? `0${month}`: month,
-            day: day.toString().length === 1? `0${day}`: day
+                setIsLoading(false);
+            } catch(err) {
+                console.err('[getStreamingByCountry]', err)
+            }
         }
-        return today;
-    }
+
+        getStreamingList();
+    }, [country]);
 
     function changeCountry(newCountryCode) {
         setCountry(newCountryCode);
     };
 
-    return {streamingList, dataIsLoaded, country, changeCountry};
+    return {streamingList, isLoading, country, changeCountry};
 };
 
 export default GetStreamingData;

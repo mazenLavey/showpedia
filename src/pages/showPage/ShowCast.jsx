@@ -1,5 +1,4 @@
-import { nanoid } from 'nanoid';
-import Actor from '../../components/ActorCard';
+import Actor from 'components/ActorCard';
 import ShowCastCSS from './css/ShowCast.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileExcel} from '@fortawesome/free-solid-svg-icons';
@@ -24,11 +23,7 @@ const ShowCast= ({rowData, dataIsLoaded = true})=>{
     function renderElement() {
         if (dataIsLoaded) {
             const data = cleanData(rowData);
-            const element = data.map(el => {
-                return (
-                    <Actor key={nanoid()} data={el}/>
-                )
-            })
+            const element = data.map((el, index) => <Actor key={index} data={el}/>)
             return element;
         }
     }
