@@ -8,7 +8,6 @@ import { showDataLoader } from './loaders/showDataLoader';
 import Favorites from './pages/favorites/Favorites';
 import Watched from './pages/watched/Watched';
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />}>
