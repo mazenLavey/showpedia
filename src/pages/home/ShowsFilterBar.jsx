@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { DefaultDataContext } from 'context/DefaultDataContext';
 import Select from 'react-select';
 import './css/ShowsFilterBar.css';
@@ -68,7 +68,7 @@ const selectStyles = {
 };
 
 const ShowsFilterBar = ( )=>{
-    const { 
+    const {
         genresList,
         yearList,
         counrtyList,
@@ -100,6 +100,14 @@ const ShowsFilterBar = ( )=>{
             setFilterByCounrtry(null);
         }
     }
+
+    useEffect(() => {
+        setFilterByGenre(null);
+        setFilterByYear(null);
+        setFilterByCounrtry(null);
+        
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div className='ShowsFilterBar'>

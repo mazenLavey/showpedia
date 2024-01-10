@@ -55,7 +55,6 @@ const ShowsList = ()=>{
     }, [showsList]);
 
     const fetchData = () => {
-        console.log('fetch')
         if(!showsList) return;
         
         if(storedData.length < showsList.length) {
