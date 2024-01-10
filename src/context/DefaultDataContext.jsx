@@ -36,7 +36,7 @@ const DefaultDataContextProvider = ({ children })=>{
             try {
                 const { data } = await getAllShows(currentShowsPage)
                 setShowsList(prev => [...prev, ...data]);
-
+                
             } catch {
                 setHasMore(false)
             }
