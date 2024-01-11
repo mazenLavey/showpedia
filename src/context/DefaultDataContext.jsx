@@ -17,6 +17,8 @@ const DefaultDataContextProvider = ({ children })=>{
     const [ filterByGenre, setFilterByGenre ] = useState(null);
     const [ filterByYear, setFilterByYear ] = useState(null);
     const [ filterByCounrtry, setFilterByCounrtry ] = useState(null);
+    const [ isFilterActive, setIsFilterActive ] = useState(false);
+    const [ filteredShowsList, setIsFilteredShowsList ] = useState([]);
     
     useEffect(()=>{
         const getPopularActors = async() => {
@@ -51,6 +53,31 @@ const DefaultDataContextProvider = ({ children })=>{
 
         getShowsList();
     }, [currentShowsPage]);
+
+    useEffect(()=>{
+        if ((!filterByGenre && !filterByYear && !filterByCounrtry) || !showsList) {
+            setIsFilterActive(false);
+            return
+        };
+
+        let filteredShows = showsList;
+    
+        if(filterByGenre) {
+            filteredShows = filteredShows.filter(el => el.genres.includes(filterByGenre));
+        }
+
+        if(filterByYear) {
+            filteredShows = filteredShows.filter(el => format(new Date(el.premiered), 'yyyy') === filterByYear);
+        }
+
+        if(filterByCounrtry) {
+            filteredShows = filteredShows.filter(el => el?.network?.country?.name === filterByCounrtry);
+        }
+
+        setIsFilteredShowsList(filteredShows);
+        setIsFilterActive(true);
+
+    }, [filterByGenre, filterByYear, filterByCounrtry, showsList]);
 
     useEffect(()=>{
         if(!showsList) return;
@@ -104,12 +131,11 @@ const DefaultDataContextProvider = ({ children })=>{
             genresList, 
             yearList, 
             counrtyList,
-            filterByGenre,
-            filterByYear,
-            filterByCounrtry,
             setFilterByGenre,
             setFilterByYear,
             setFilterByCounrtry,
+            isFilterActive,
+            filteredShowsList,
         }}>
             { children }
         </DefaultDataContext.Provider>
