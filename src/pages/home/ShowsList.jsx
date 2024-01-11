@@ -6,7 +6,7 @@ import { DefaultDataContext } from 'context/DefaultDataContext';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import BeatLoader from 'react-spinners/BeatLoader';
 import ShowsFilterBar from './ShowsFilterBar';
-import { format } from 'date-fns';
+import SeriesNotFound from "./SeriesNotFound";
 import './css/ShowsList.css';
 
 const SLICE_AMOUNT = 30;
@@ -16,31 +16,20 @@ const ShowsList = ()=>{
         showsList,
         fetchMoreShows,
         hasMore,
-        filterByGenre,
-        filterByYear,
-        filterByCounrtry,
+        isFilterActive,
+        filteredShowsList,
     } = useContext(DefaultDataContext);
 
     const { isMobileScreen, isTabletScreen } = useMedia();
-    const [ storedData, setStoredData ] = useState([]);
+    const [ storedShows, setStoredShows ] = useState([]);
 
-    const renderNewElements = ()=>{
-        let elements = storedData.filter(el => el.image && el.name);
+    const renderShows = ()=>{
+        const data = isFilterActive ? filteredShowsList : storedShows;
 
-        if(filterByGenre) {
-            elements = elements.filter(el => el.genres.includes(filterByGenre));
-        }
-
-        if(filterByYear) {
-            elements = elements.filter(el => format(new Date(el.premiered), 'yyyy') === filterByYear);
-        }
-
-        if(filterByCounrtry) {
-            elements = elements.filter(el => el?.network?.country?.name === filterByCounrtry);
-        }
+        const elements = data.filter(el => el.image && el.name);
 
         if(elements.length === 0) {
-            return <p>0 series found</p>;
+            return <SeriesNotFound />;
         }
 
         return elements.map( el => <ShowCard key={el.id} data={el}/>);
@@ -57,13 +46,19 @@ const ShowsList = ()=>{
     const fetchData = () => {
         if(!showsList) return;
         
-        if(storedData.length < showsList.length) {
-            const slicedData = showsList.slice(storedData.length, storedData.length + SLICE_AMOUNT);
-            setStoredData(prev => [...prev, ...slicedData]);
+        if(storedShows.length < showsList.length) {
+            const slicedData = showsList.slice(storedShows.length, storedShows.length + SLICE_AMOUNT);
+            setStoredShows(prev => [...prev, ...slicedData]);
 
-        } else if(storedData.length > 0) {
+        } else if(storedShows.length > 0) {
             fetchMoreShows();
         }
+    }
+
+    const fetchFilteredData = () => {
+        if(!showsList) return;
+
+        fetchMoreShows();
     }
 
     if(showsList.length === 0) {
@@ -78,22 +73,18 @@ const ShowsList = ()=>{
         <section>
             <ShowsFilterBar />
             <div className="section-margin">
-                {
-                    filterByGenre || filterByYear || filterByCounrtry ?
-                    <div className="ShowsList__wrapper">
-                        { renderNewElements() }
-                    </div>
-                    :
-                    <InfiniteScroll
-                        dataLength={storedData.length}
-                        next={fetchData}
-                        hasMore={hasMore}
-                        loader={<BeatLoader className="ShowsList__InfiniteScrollLoader" color="#e21221" />} >
-                        <div className="ShowsList__wrapper">
-                            { renderNewElements() }
-                        </div>
-                    </InfiniteScroll>
-                }
+                <InfiniteScroll
+                            dataLength={isFilterActive ? filteredShowsList : storedShows.length}
+                            next={isFilterActive ? fetchFilteredData : fetchData}
+                            hasMore={hasMore}
+                            loader={<BeatLoader 
+                                className="ShowsList__InfiniteScrollLoader" 
+                                color="#e21221" 
+                                style={{ visibility: filteredShowsList.length === 0 || storedShows.length === 0? 'hidden': 'visible'}} />} >
+                            <div className="ShowsList__wrapper">
+                                { renderShows() }
+                            </div>
+                </InfiniteScroll>
             </div>
         </section>
     );
