@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import matchText from '../../functions/matchText';
 import ShowInfoCSS from './css/ShowInfo.module.css';
 import FavoriteBtn from '../../components/FavoriteBtn';
@@ -10,7 +10,8 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 const ShowInfo = ({data, dataIsLoaded = true})=>{
-    const [imgLoaded, setImgLoaded] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+    const imgRef = useRef(null);
 
     function getSummary() {
         if (dataIsLoaded && data.summary) {
@@ -45,7 +46,8 @@ const ShowInfo = ({data, dataIsLoaded = true})=>{
     }
 
     function handelLoadingImg(e){
-        setImgLoaded(e.target.complete);
+        setIsLoading(!e.target.complete);
+        imgRef.current.classList.add('fade-in');
     }
 
     return (
@@ -55,8 +57,8 @@ const ShowInfo = ({data, dataIsLoaded = true})=>{
             <section className={`${ShowInfoCSS.wrapper} section-margin`}>
                 <ShowBackground data={data}/>
                 <div className={ShowInfoCSS.img__container}>
-                    {imgLoaded? null: <Skeleton highlightColor='#d5d4d4'/>}
-                    <img src={data.image.original} alt={data.name} onLoad={handelLoadingImg}/>
+                    {isLoading && <Skeleton highlightColor='#d5d4d4'/>}
+                    <img ref={imgRef} src={data.image.original} alt={data.name} onLoad={handelLoadingImg}/>
                 </div>
                 <div className={ShowInfoCSS.info}>
                     <div className={ShowInfoCSS.heading}>
