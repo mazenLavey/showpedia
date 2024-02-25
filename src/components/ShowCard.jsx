@@ -19,6 +19,7 @@ const ShowCard = ({data, badges = false, streamingDate})=>{
     const summary = data.summary? matchText(data.summary): null;
 
     const { ref, inView } = useInView({
+        rootMargin: "500px",
         threshold: 0,
         triggerOnce: true,
     });
